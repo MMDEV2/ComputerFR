@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" type = "text/css" href=contact5.css />
+    <script src="contact5.js"></script>
+</head>
+<body>
+
+    <div class="wrapper">
+        <h2>Contact us</h2>
+    
+    <form action="mail.php" method="POST">
+        <div class="input_field">
+            <p>Name</p> <input type="text" placeholder="Name" id="name">
+        <input type="text" placeholder="Email"  name="email">
+        <div class="input_field">
+            <input type="text" placeholder="Phone" id="phone">
+        </div>
+        
+        <!-- <p>Request Phone Call:</p>
+        Yes:<input type="checkbox" value="Yes" name="call"><br />
+        No:<input type="checkbox" value="No" name="call"><br />
+         -->
+        <!-- <p>Website</p> <input type="text" name="website"> -->
+        
+        <p>Priority</p>
+        <select name="priority" size="1">
+        <option value="Low">Low</option>
+        <option value="Normal">Normal</option>
+        <option value="High">High</option>
+        <option value="Emergency">Emergency</option>
+        </select>
+        <br />
+        
+        <!-- <p>Type</p>
+        <select name="type" size="1">
+        <option value="update">Website Update</option>
+        <option value="change">Information Change</option>
+        <option value="addition">Information Addition</option>
+        <option value="new">New Products</option>
+        </select> -->
+        <br />
+        
+        <p>Message</p><textarea name="message" rows="6" cols="25"></textarea><br />
+        <div class="btn">
+        <input type="submit" value="Submit">
+            </div>
+    </form>
+    </div>
+
+</body>
+</html>
